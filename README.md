@@ -79,4 +79,3 @@ A sensor marks each revolution, a timer divides it into angular slices (columns)
 - Motor speed: above ~3000 RPM was a problem; ~1500 RPM works, keeping an eye on the inertia of the mounted components
 - [ ] Position sensor (HW-870) test on the STM32
 - [ ] Sync the LED refresh with the rotation (POV display)
-- [ ] Real-time clock mode
