@@ -6,9 +6,9 @@ SIZE    = arm-none-eabi-size
 
 ARCH = -mcpu=cortex-m4 -mthumb -mfpu=fpv4-sp-d16 -mfloat-abi=hard
 
-# Rutas de CMSIS (core + device), relativas a la raiz del repositorio
-CORE_CMSIS   = cmsis_core/CMSIS/Core/Include
-CMSIS_DEVICE = cmsis_device_f4/Include
+# Rutas de CMSIS (core + device), relativas a la carpeta de prueba
+CORE_CMSIS   = ../cmsis_core/CMSIS/Core/Include
+CMSIS_DEVICE = ../cmsis_device_f4/Include
 CFLAGS  = -Wall -Wextra -std=c11 -ffreestanding -O2 -g $(ARCH)
 CFLAGS += -DSTM32F411xE
 CFLAGS += -Iinc -I$(CORE_CMSIS) -I$(CMSIS_DEVICE)
